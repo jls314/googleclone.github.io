@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome and Icons -->
+    <script src="https://kit.fontawesome.com/d343995bab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar p-0">
+            <div class="leftSide">
+                <!-- Button to open sidePanel -->
+                <button class="btn sidePanelBtn" onclick="openSidePanel()"><svg
+                        style="fill:#70757a;width:24px;height:24px" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                    </svg></button>
+                <!-- End of Button -->
+                <a class="navLinks activeLink" href="#">ALL</a>
+                <a class="navLinks" href="#">IMAGES</a>
+            </div>
+            <div class="rightSide">
+                <div class="dropdownDot">
+                    <img class="dropdownDotIcon" onclick="openDot()" role="button"
+                            src="https://icon-library.net//images/google-apps-icon-png/google-apps-icon-png-24.jpg"
+                            alt="nine dots">
+                </div>
+                <div class="profilePicContainer">
+                    <img onclick="openProfile()" role="button" src="img/justin1.jpg" alt="profile picture" class="profileImg">
+                </div>
+            </div>
+        </nav>
+        <!-- Collapsed Dot Container -->
+        <div id="dropDotContainer">
+            <div class="dotItem">
+                <a href="#"><img class="profileImg" src="img/justin1.jpg" alt="account picture">
+                    Account</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img
+                        src="https://purepng.com/public/uploads/large/purepng.com-google-assistant-logobrandlogobrand-logoiconssymbolslogosgoogle-681522937341jlgpk.png"
+                        alt="google assistant icon">
+                    Assistant</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img
+                        src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
+                        alt="google search logo">
+                    Search</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img
+                        src="https://www.freepnglogos.com/uploads/512x512-logo/512x512-transparent-logo-google-maps-png-27.png"
+                        alt="google maps logo">
+                    Maps</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img
+                        src="https://www.freepnglogos.com/uploads/youtube-play-red-logo-png-transparent-background-6.png"
+                        alt="youtube play logo">
+                    Youtube</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img
+                        src="https://www.freepnglogos.com/uploads/google-play-png-logo/arrow-andorid-google-google-play-logo-market-media-play-png-logo-11.png"
+                        alt="google play logo">
+                    Play</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img src="https://iconape.com/wp-content/png_logo_vector/google-news.png"
+                        alt="google news logo">
+                    News</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img
+                        src="https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-file-gmail-icon-svg-wikimedia-commons-0.png"
+                        alt="gmail logo">
+                    Gmail</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img src="https://iconape.com/wp-content/png_logo_vector/google-meet-logo-icon-2.png"
+                        alt="google meet logo">
+                    Meet</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img src="https://seeklogo.com/images/G/google-chat-logo-44A66F8CF0-seeklogo.com.png"
+                        alt="google chat logo">
+                    Chat</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img
+                        src="https://toppng.com/uploads/preview/free-contacts-icon-android-lollipop-s-google-contacts-icon-svg-11553447243wdnmbgh1iw.png"
+                        alt="google contacts logo">
+                    Contacts</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img src="https://seeklogo.com/images/G/google-drive-logo-C66555C645-seeklogo.com.png"
+                        alt="google drive logo">
+                    Drive</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img src="https://seeklogo.com/images/G/google-calendar-logo-8594DB460D-seeklogo.com.png"
+                        alt="google calendar logo">
+                    Calendar</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img src="https://iconape.com/wp-content/files/ev/369245/svg/369245.svg"
+                        alt="google translate logo">
+                    Translate</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img src="https://seeklogo.com/images/G/google-photos-logo-09B9ABDCF8-seeklogo.com.png"
+                        alt="google photos logo">
+                    Photos</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img src="https://seeklogo.com/images/G/google-duo-logo-64D51D27AA-seeklogo.com.png"
+                        alt="google duo logo">
+                    Duo</a>
+            </div>
+            <div class="dotItem">
+                <a href="#"><img src="https://seeklogo.com/images/G/google-shopping-logo-16960F5744-seeklogo.com.png"
+                        alt="google shopping logo">
+                    Shopping</a>
+            </div>
+        </div>
+        <!-- Collapsed Profile Container -->
+        <div id="profileContainer">
+            <div class="headerPart">
+                <div class="imgContainer">
+                    <img src="img/justin2.jpg" alt="profile picture">
+                    <div class="cameraIcon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                </div>
+                <div class="profileDetails">
+                    <h6>Justin Santos</h6>
+                    <p>justin.santos1997@gmail.com</p>
+                </div>
+                <div class="manageBtn">
+                    <button class="btn">Manage your Google Account</button>
+                </div>
+            </div>
+            <div class="dividerLine"></div>
+            <div class="middlePart">
+                <div class="containerTop">
+                    <img src="img/justin2.jpg" alt="profile picture">
+                    <h6>Justin Santos</h6>
+                    <p>justin.santos1997@gmail.com</p>
+                </div>
+                <div class="addAccount">
+                    <i class="fas fa-user-plus"></i>
+                    <p>Add another account</p>
+                </div>
+            </div>
+            <div class="dividerLine"></div>
+            <div class="signOut">
+                <button class="btn">Sign out of all accounts</button>
+            </div>
+            <div class="dividerLine"></div>
+            <div class="footerPart">
+                <p>Privacy Policy &middot; Terms of Services</p>
+                <p class="ps">This clone is for personal use only</p>
+            </div>
+        </div>
+        <!-- Collapsed Side Panel -->
+        <div id="sidePanel">
+            <a href="#"><img class="sidePanelLogo"
+                    src="https://www.freepnglogos.com/uploads/google-logo-png/file-google-logo-svg-wikimedia-commons-23.png"
+                    alt="Google logo"></a>
+            <button onclick="closeSidePanel()">&times;</button>
+            <ul class="navbar-nav">
+                <li><a href=""><img class="sidePanelIcons" src="https://www.gstatic.com/navigationdrawer/home_icon.svg"
+                            alt="Home icon">Home</a></li>
+                <li><a href=""><img class="sidePanelIcons"
+                            src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_history_48px-512.png"
+                            alt="Search history icon">Search history</a></li>
+                <li><a href=""><img class="sidePanelIcons" src="https://www.gstatic.com/navigationdrawer/save_icon.svg"
+                            alt="Collections icon">Collections</a></li>
+                <li><a href=""><img class="sidePanelIcons"
+                            src="https://www.gstatic.com/navigationdrawer/manage_searches_icon.png"
+                            alt="Offline searches icon">Offline searches</a></li>
+                <hr>
+                <li><a href=""><img class="sidePanelIcons"
+                            src="https://www.gstatic.com/navigationdrawer/settings_icon.svg"
+                            alt="Settings icon">Settings</a></li>
+                <li><a href=""><img class="sidePanelIcons"
+                            src="https://www.gstatic.com/navigationdrawer/privacy_advisor_icon.svg"
+                            alt="Data search icon">Your data in Search</a></li>
+                <li><a href=""><img class="sidePanelIcons"
+                            src="https://www.gstatic.com/navigationdrawer/explicit_icon.svg"
+                            alt="Hide explicit icon">Hide explicit results: off</a></li>
+                <li><a href=""><img class="sidePanelIcons"
+                            src="https://www.gstatic.com/navigationdrawer/how_search_works_icon.svg"
+                            alt="search icon">How Search Works</a></li>
+                <li><a href=""><img class="sidePanelIcons" src="https://www.gstatic.com/navigationdrawer/help_icon.svg"
+                            alt="Help icon">Help</a></li>
+                <li><a href=""><img class="sidePanelIcons"
+                            src="https://www.gstatic.com/navigationdrawer/feedback_icon.svg" alt="feedback icon">Send
+                        feedback</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="mainSection">
+        <div class="googleLogo">
+            <img src="https://www.google.com/logos/doodles/2015/philippines-national-day-2015-4802299809497088-hp2x.jpg"
+                alt="google PH independence day">
+        </div>
+        <div class="searchBar">
+            <div class="inputBox">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-microphone"></i>
+                <input class="searchArea text-center" type="text" placeholder="Google clone by JustinSantos">
+            </div>
+            <div class="changeLanguage">
+                <p>Google offered in:</p>
+                <a href="#">Filipino</a>
+                <a href="#">Kapampangan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Part of the clone site -->
+    <footer>
+        <section class="regionSection">
+            <h6>Philippines</h6>
+        </section>
+        <hr>
+        <div class="firstList">
+            <a href="#">Settings</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+        <div class="secondList">
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">About</a>
+        </div>
+    </footer>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
